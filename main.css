@@ -1,0 +1,143 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      padding: 20px;
+    }
+    .header h1 {
+      font-size: 36px;
+      color: #333333;
+    }
+    .header p {
+      font-size: 18px;
+      color: #666666;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .navbar {
+      display: flex;
+      align-items: center;
+      background-color: #333333;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+    .navbar a:hover {
+      background-color: #555555;
+    }
+    
+    .welcome {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url("background.jpg");
+      background-size: cover;
+    }
+    .welcome h1 {
+      font-size: 48px;
+      color: white;
+      text-shadow: 2px 2px 4px black;
+    }
+    
+    .welcome {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: linear-gradient(to right, #ff9a9e, #fad0c4);
+    }
+    .welcome h1 {
+      font-size: 48px;
+      color: white;
+      text-shadow: 2px 2px 4px black;
+      animation: bounce 1s infinite;
+    }
+    .welcome button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background-color: white;
+      color: #ff9a9e;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .welcome button:hover {
+      transform: scale(1.1);
+    }
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(-10px);
+      }
+      50% {
+        transform: translateY(10px);
+      }
+    }
+    
+    .navbar {
+      display: flex;
+      align-items: center;
+      background-color: var(--bg-color);
+    }
+    .navbar a {
+      color: var(--text-color);
+      text-decoration: none;
+      padding: 10px;
+    }
+    .navbar a:hover {
+      background-color: var(--hover-color);
+    }
+    .navbar button {
+      margin-left: auto;
+      margin-right: 10px;
+      border: none;
+      border-radius: 10px;
+      padding: 5px 10px;
+      background-color: var(--button-color);
+      color: var(--text-color);
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .navbar button:hover {
+      transform: scale(1.1);
+    }
+    :root {
+      --bg-color: #333333;
+      --text-color: white;
+      --hover-color: #555555;
+      --button-color: #999999;
+    }
+    
+    body.dark-mode {
+      background-color: #000117;
+    }
+    
+    .header h1 {
+      color: #e6e6e6;
+    }
+    .header p {
+      color: ##c9c9c9;
+    }
+    
+    .welcome {
+      background-image: linear-gradient(to right, #000117, #010336);
+    }
