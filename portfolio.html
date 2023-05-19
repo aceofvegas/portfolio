@@ -16,7 +16,12 @@
     <a id="menu3" href="portfolio.html">Portfolio</a>
     <a id="menu4" href="contact.html">Contact</a>
     <button id="darkbtn" class="lightswitch" onclick="darkfun()">💡</button>
-    
+    <script>
+    let btn = document.getElementById("darkbtn");
+    btn.addEventListener("click", function() {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
   </div>
  
 

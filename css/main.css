@@ -5,12 +5,18 @@
   --hover-color: #555555;
   --button-color: #999999;
   --mainbg-color: #767dff;
+
+  --grad-start: #ff9a9e; 
+  --grad-end: #fad0c4;
   
 }
 
 body.dark-mode {
   --mainbg-color: #1a21aa;
+  --grad-start: #000117; 
+  --grad-end: #010336;
 }
+
 
 body {
       font-family: Arial, sans-serif;
@@ -77,7 +83,7 @@ body {
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-image: linear-gradient(to right, #ff9a9e, #fad0c4);
+      background-image: linear-gradient(to right, var(--grad-start), var(--grad-end));
     }
     .welcome h1 {
       font-size: 48px;
@@ -143,6 +149,4 @@ body {
       color: #c9c9c9;
     }
     
-    .welcome {
-      background-image: linear-gradient(to right, #000117, #010336);
-    }
+   
