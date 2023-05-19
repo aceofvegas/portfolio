@@ -4,7 +4,7 @@
   --text-color: white;
   --hover-color: #555555;
   --button-color: #999999;
-  --mainbg-color: #767dff;
+  --mainbg-color: #e2e2e2;
 
   --grad-start: #ff9a9e; 
   --grad-end: #fad0c4;
@@ -12,7 +12,7 @@
 }
 
 body.dark-mode {
-  --mainbg-color: #1a21aa;
+  --mainbg-color: #000333;
   --grad-start: #000117; 
   --grad-end: #010336;
 }
