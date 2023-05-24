@@ -8,19 +8,23 @@
 
   --grad-start: #ff9a9e; 
   --grad-end: #fad0c4;
-  
+  --h1-color: #000000;
+  --p-color: #0f0f0f
 }
 
 body.dark-mode {
-  --mainbg-color: #000333;
+  --mainbg-color: #000117;
   --grad-start: #000117; 
-  --grad-end: #010336;
+  --grad-end: #0e0130;
+  --h1-color: #e6e6e6;
+  --p-color: #c9c9c9;
 }
 
 
 body {
       font-family: Arial, sans-serif;
-      background-color: var(--mainbg-color);
+      
+      background-image: linear-gradient(to right, var(--grad-start), var(--grad-end));
     }
     .container {
       max-width: 800px;
@@ -32,11 +36,11 @@ body {
     }
     .header h1 {
       font-size: 36px;
-      color: #000000;
+      color: var(--h1-color);
     }
     .header p {
       font-size: 18px;
-      color: #666666;
+      color: var(--p-color);
     }
     .gallery {
       display: grid;
@@ -52,7 +56,10 @@ body {
     .navbar {
       display: flex;
       align-items: center;
-      background-color: #333333;
+      background-color: #333333
+      position: fixed; /* Set the navbar to fixed position */
+      top: 0; /* Position the navbar at the top of the page */
+      width: 100%; /* Full width */
     }
     .navbar a {
       color: white;
@@ -142,11 +149,6 @@ body {
     }
 
     
-    body.dark-mode h1 {
-      color: #e6e6e6;
-    }
-    body.dark-mode p {
-      color: #c9c9c9;
-    }
+    
     
    
